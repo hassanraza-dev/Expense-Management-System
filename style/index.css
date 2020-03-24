@@ -1,0 +1,50 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right, blue, red);
+    height: 657px;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.card
+{
+    background-image: linear-gradient(to right, red, blue);
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.custom
+{
+    border-radius: 70px;
+    border: solid 1px white;
+    /* height: 480px auto; */
+    text-align: center;
+    color: white;
+    transition: .2s ease-in-out;
+    margin-top: 20px;
+    padding: 45px;
+   
+        
+}
+.custom:hover
+{
+    box-shadow: 1px 1px 10px black;
+}
+form{
+    
+    margin-top: 30px;
+    font-size: 28px;
+}
+.form-group input
+{
+    border-radius: 40px;
+    background: none;
+}
+button
+{
+    width: 200px;
+}
