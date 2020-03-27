@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Expense</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./style/dashboard.css">
+    <link rel="icon" href="../img/favicon.png" type="image/icon" sizes="16x16">
+    <script src="./js/dashboard.js"></script>
 </head>
 <body>
-    <script>
+   <script>
+     
+   </script>
 
-        var i =JSON.parse(localStorage.getItem("allperson"));
-        document.write( i[0].name)
-    </script>
+<div class="sticky">
+    <div class="card">
+        <div class="card-header">
+            <h1>Welcome To Expense Management System</h1>
+            <div><span style="font-size: 29px;"> hello! </span> <b id="cuser" style="font-size: 29px;"></b> <button class="lgbtn" onclick="logout()">Logout</button></div>
+        </div>
+     </div>
+    </div>
+     <h1 style="text-align: center; margin: 0px;">Add Expense</h1>
+     <div class="add-box">
+     <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Description</label>
+          <input type="text" class="form-control" id="desc" required>
+          
+        </div>
+
+        
+        <div class="form-group">
+          <label for="exampleInputPassword1">Amount</label>
+          <input type="number" class="form-control" id="amount" required>
+        </div>
+        
+        <button type="button" class="btn btn-primary" onclick="addexp()">Add</button>
+      </form>
+    </div>
+    <div id="panel" style="font-size: 22px;">
+        <div>
+        <table class="table table-borderless table-dark" id="table">
+        
+            <th>Description</th>
+            <th>Amount</th>
+        
+        
+
+    </table></div>
+</div>
+    
+    
+    
+    
 </body>
 </html>

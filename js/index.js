@@ -17,14 +17,14 @@ let login = () => {
   let lgemail = document.getElementById("lgemail").value;
   let lgpass = document.getElementById("lgpass").value;
   let allperson = JSON.parse(localStorage.getItem("allperson"));
+  
   for (let i = 0; i <= user.length; i++) {
     if(lgemail==allperson[i].email && lgpass==allperson[i].pass){
-      alert("welcome")
+      
+      localStorage.setItem("currentperson", JSON.stringify(allperson[i]));
+      window.location.href = "./dashboard/dashboard.html";
     }
     else
     {
-      alert("something wrong")
-    }
-  }
-
-}
+       alert("Email or Password is Incorrect")
+    }}}

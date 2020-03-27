@@ -1,0 +1,38 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    height: 657px;
+    background-position: center;
+    background-size: cover;
+
+
+}
+.card
+{
+    background-image: linear-gradient(to right, red, blue);
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 10px black;
+}
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+.lgbtn
+{
+    background: none;
+    color: white;
+    margin: 0px;
+}
+.add-box
+{
+    padding: 80px;
+    
+
+}
+button
+{
+    width: 100px;
+}
