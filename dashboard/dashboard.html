@@ -33,8 +33,9 @@
      </div>
     </div>
      <h1 style="text-align: center; margin: 0px;">Add Expense</h1>
+     <button class="btn btn-primary" onclick="total()" style="margin: 12px;">Total</button>
      <div class="add-box">
-     <form>
+     <form  autocomplete="off">
         <div class="form-group">
           <label for="exampleInputEmail1">Description</label>
           <input type="text" class="form-control" id="desc" required>
@@ -52,14 +53,21 @@
     </div>
     <div id="panel" style="font-size: 22px;">
         <div>
-        <table class="table table-borderless table-dark" id="table">
+        <!-- <table class="table table-borderless table-dark" id="table"> -->
         
-            <th>Description</th>
-            <th>Amount</th>
-        
-        
+        <table  class="table table-borderless table-dark" id="table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
 
-    </table></div>
+            </tbody>
+        </table>
+</div>
 </div>
     
     
