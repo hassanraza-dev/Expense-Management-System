@@ -1,6 +1,6 @@
 
 function guid() {
-  return parseInt(Math.random());
+  return parseInt(Math.floor((Math.random() * 1000) + 1000));
 }
 
 function create() {
@@ -39,32 +39,22 @@ function getMembers() {
   }
 }
 
-//   var alluser = JSON.parse(localStorage.getItem("allperson"))
-//  let user = [alluser];
-
-//   let create = () => {
-   
-
-//     let name = document.getElementById("username").value;
-//     let email = document.getElementById("email").value;
-//     let pass = document.getElementById("password").value;
-//     user.push({ name: name, email: email, pass: pass }); 
-//     localStorage.setItem("allperson", JSON.stringify(user));
-//   }
-
 
 
   let login = () => {
-    let allperson = JSON.parse(localStorage.getItem("allperson"));
+    
+    var memberRecord = JSON.parse(localStorage.getItem("members"));
     let lgemail = document.getElementById("lgemail").value;
     let lgpass = document.getElementById("lgpass").value;
 
-
-    for (let i = 0; i <= allperson.length; i++) {
-      if (lgemail == allperson[i].email && lgpass == allperson[i].pass) {
-
-        localStorage.setItem("currentperson", JSON.stringify(allperson[i]));
+    for (let i = 0; i <= memberRecord.length; i++)
+    {
+      if(memberRecord[i].password == lgpass && memberRecord[i].email == lgemail)
+      {
+        
+        localStorage.setItem("currentperson", JSON.stringify(memberRecord[i]));
         window.location.href = "./dashboard/dashboard.html";
       }
     }
+
   }

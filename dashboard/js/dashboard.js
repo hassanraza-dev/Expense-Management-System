@@ -3,7 +3,7 @@ var i =JSON.parse(localStorage.getItem("currentperson"));
 function user(){
     document.getElementById("cuser").style.color = "yellow"
     document.getElementById("cuser").style.textTransform = "capitalize"
- window.onload=document.getElementById("cuser").innerHTML = i.name;
+ window.onload=document.getElementById("cuser").innerHTML = i.username;
 }
 window.onload = user;
 
