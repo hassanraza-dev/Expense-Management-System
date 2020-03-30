@@ -15,11 +15,7 @@ body
     color: white;
     box-shadow: 1px 1px 10px black;
 }
-.sticky {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-  }
+
 .lgbtn
 {
     background: none;
