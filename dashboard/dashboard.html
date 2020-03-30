@@ -49,24 +49,30 @@
         </div>
         
         <button type="button" class="btn btn-primary" onclick="addexp()">Add</button>
+       <a href="javascript:void(0)"> <button type="button" class="btn btn-primary" onclick="clearall()">Clear All</button></a>
       </form>
     </div>
     <div id="panel" style="font-size: 22px;">
         <div>
-        <!-- <table class="table table-borderless table-dark" id="table"> -->
         
-        <table  class="table table-borderless table-dark" id="table">
-            <thead>
-                <tr>
-                    <th>Description</th>
-                    <th>Amount</th>
-                    
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
+        
+            <table id="member_table" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <!-- <th>#</th> -->
+                        <th>
+                            <a href="#" onclick="sortBy('desc')">Description</a>
+                            
+                        </th>
+                        <th>
+                            <a href="#" onclick="sortBy('amount')">Amount</a>
+                            
+                        </th>
+                      
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+            </table>
 </div>
 </div>
     
